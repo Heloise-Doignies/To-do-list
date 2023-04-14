@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Playfair+Display&family=WindSong&display=swap');
+
+/* font-family: 'Cinzel', serif;
+font-family: 'Playfair Display', serif; */
+
+
+body {
+    margin:0 auto;
+
+    background: linear-gradient(271deg, #1ed4a5, #9f1ed4);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+     animation: AnimationName 30s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+#bloc {
+    background-color:aliceblue;
+    border-radius:20px;
+    width:40vw;
+    height: auto;
+    min-height:90vh;
+    margin:0 auto;
+    margin-top:30px;
+    padding:10px;
+    text-align: center;
+    display: flex;
+    gap:5px;
+    flex-direction: column;
+    align-items: center;
+}
+
+#liste {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:10px;
+}
+
+#fait {
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap:10px;
+}
+
+.zone-taches {
+    display:flex;
+    flex-direction: column;
+    gap:5px;
+    padding:5px;
+    border:0.5px grey solid;
+    border-radius:10px;
+    height:auto;
+    width:100px;
+}
+
+h1 {
+    font-size: 2rem;
+    font-family: 'Cinzel', serif;
+    text-decoration: underline;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-family: 'Cinzel', serif;
+}
+
+#zoneSaisie, #zoneDescription, #zoneDate {
+    width:80%;
+    height:40px;
+    border:1px solid rgb(93, 82, 82);
+    outline:none;
+    font-size:1rem;
+    border-radius: 10px;
+    font-family: 'Playfair Display', serif;
+}
+
+#ajout {
+    height:40px;
+    width:120px;
+    border:0;
+    border-radius: 10px;
+    background-color:#1ed4a5;
+    color:white;
+    font-weight: bold;
+    font-family: 'Cinzel', serif;
+}
+
+#ajout:hover {    
+    background: linear-gradient(271deg, #1ed4a5, #9f1ed4);
+    background-size: 400% 400%;
+    cursor: pointer;
+    -webkit-animation: AnimationName 30s ease infinite;
+    -moz-animation: AnimationName 30s ease infinite;
+     animation: AnimationName 30s ease infinite;
+}
+
+.titre-style {
+    margin:0;
+    cursor:pointer;
+    font-size:1rem;
+    color:rgb(25, 25, 84);
+    font-family: 'Playfair Display', serif;
+    max-width:90px;
+
+}
+
+.description-style {
+    margin:0;
+    font-size:0.8rem;
+    color:black;
+    font-family: 'Playfair Display', serif;
+    max-width:90px;
+}
+
+.date-style {
+    margin:0;
+    font-size:0.5rem;
+    text-align: end;
+    font-style: italic;
+    color:rgb(93, 82, 82);
+    font-family: 'Playfair Display', serif;
+}
+
+/* .tache-style {
+    padding:5px;
+    border:0.5px grey solid;
+    border-radius:10px;
+    height:auto;
+    width:100px;
+} */
