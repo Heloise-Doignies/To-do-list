@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>To Do List</title>
 </head>
@@ -10,19 +10,21 @@
 <body>
     <div id="bloc">
         <h1>To Do List</h1>
+        
+        <form id="formulaire" action="" method="get" class="form-example">
+            <input type="text" id="zoneSaisie" placeholder="Saisir votre titre"> 
+            <input type="text" id="zoneDescription" placeholder="Saisir une description">
+            <!-- <input type="text" id="zoneDate" value=""> -->
+            <button type="submit" id="ajout">Ajouter</button>
+         </form>
 
-        <input type="text" id="zoneSaisie" placeholder="Saisir votre titre"> 
-        <input type="text" id="zoneDescription" placeholder="Saisir une description">
-        <!-- <input type="text" id="zoneDate" value=""> -->
-        <button type="submit" id="ajout">Ajouter</button>
-
-        <h2>A faire</h2>
+        <h2>À faire</h2>
         <div id="liste"></div>
 
         <h2>Déjà fait</h2>
         <div id="fait"></div>
 
-
+            <!-- <div class="zone-taches"><div class="check"></div><div class="remove"></div></div> -->
     </div>
 
     <script src="main.js"></script>
