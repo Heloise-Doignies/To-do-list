@@ -6,13 +6,15 @@ var zoneSaisie = document.getElementById("zoneSaisie");
 var zoneDescription = document.getElementById("zoneDescription");
 var zoneDate = document.getElementById("zoneDate");
 
-var randomColor
+ajout.addEventListener('submit', function(event) {
+    event.preventDefault();
 
-// ajout.submit(function() {
-ajout.addEventListener('submit', function() {
+    var color = ["ff9770", "a8dadc", "f4acb7", "cdb4db", "ffd670", "76c893", "cddafd", "dde7c7"];
+    var randomColor = color[Math.floor(Math.random()*color.length)];
+
     var tache = document.createElement('div');
     tache.classList.add("zone-taches");
-    // tache.style.borderColor = randomColor;
+    tache.style.backgroundColor = "#" + randomColor;
     liste.appendChild(tache);
     
     var titre = document.createElement('p');
